@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#B6FF00" />
+    <title>Copa Presídio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar site-header">
+        <button class="brand-button" data-view="home" aria-label="Ir para início">
+          <span class="brand-mark">⚽</span>
+          <span>
+            <strong>Copa Presídio</strong>
+            <small>campeonato escolar</small>
+          </span>
+        </button>
+
+        <nav class="topbar-nav" aria-label="Navegação principal">
+          <button data-view="home">Início</button>
+          <button data-view="matches">Jogos</button>
+          <button data-view="standings">Classificação</button>
+          <button data-view="teams">Times</button>
+          <button data-view="adminLogin">Admin</button>
+        </nav>
+
+        <div class="topbar-actions">
+          <button class="ghost-button header-login" data-view="login" type="button">Entrar</button>
+          <button class="primary-button header-register" data-view="register" type="button">Criar conta</button>
+          <button id="themeToggle" class="icon-button" type="button" aria-label="Alternar tema">☀</button>
+        </div>
+      </header>
+
+      <main id="app" class="screen"></main>
+
+      <nav class="bottom-nav">
+        <button data-view="home" class="nav-item active">
+          <span>🏠</span>
+          Início
+        </button>
+        <button data-view="teams" class="nav-item">
+          <span>🛡️</span>
+          Times
+        </button>
+        <button data-view="matches" class="nav-item">
+          <span>⚽</span>
+          Jogos
+        </button>
+        <button data-view="standings" class="nav-item">
+          <span>📊</span>
+          Tabela
+        </button>
+        <button data-view="profile" class="nav-item">
+          <span>👤</span>
+          Conta
+        </button>
+      </nav>
+    </div>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="/app.js"></script>
+  </body>
+</html>
