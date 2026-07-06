@@ -890,7 +890,7 @@ app.put('/api/admin/players/:id/block', requireAuth('admin'), async (req, res) =
   }
 });
 
-app.get('*', (req, res) => {
+app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
